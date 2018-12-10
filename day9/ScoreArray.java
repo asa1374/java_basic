@@ -5,7 +5,7 @@ public class ScoreArray {
 		System.out.println("점수 3개 입력");
 		Scanner scanner = new Scanner(System.in);
 		int[] num = new int[3];
-		for(int i=0;i<3;i++) {
+		for(int i=0;i<num.length;i++) {
 			num[i]=scanner.nextInt();
 		}
 		String a = "";
@@ -19,7 +19,7 @@ public class ScoreArray {
 		System.out.println(a);
 	}
 	public static void main(String[] args) {
-		ScoreArray array = new ScoreArray();
+		NameScoreArray array = new NameScoreArray();
 		array.test();
 	}
 }
