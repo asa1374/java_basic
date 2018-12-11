@@ -32,9 +32,20 @@ public class Main {
 				break;
 			case "5" : 
 				Grade grade = new Grade();
-				grade.grade();
+				System.out.println("몇명의 학생의 점수를 입력하시나요");
+				int num = scanner.nextInt();
+				System.out.println(num+"명의 학생의 이름과 점수를 입력하시오");
+				String[] name = new String[num];
+				int[] score = new int[num];
+				for(int i=0;i<num;i++) {
+					name[i] = scanner.next();
+					score[i] = scanner.nextInt();
+				}
+				System.out.println(grade.grade(name,score));
 				break;
-			default : break;
+			default : 
+				System.out.println("잘못입력");
+				break;
 			}
 		}
 	}

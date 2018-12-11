@@ -1,8 +1,7 @@
 package day9;
 import java.util.Random;
-import java.util.Scanner;
 public class LottoNumberGen {
-	public void test() {
+	public String test() {
 		//Lotto 6개의 랜덤 숫자
 		//1~45까지 랜덤숫자
 		Random random = new Random();
@@ -18,10 +17,6 @@ public class LottoNumberGen {
 				res += lotto[i];
 			}
 		}
-		System.out.println(res);
-	}
-	public static void main(String[] args) {
-		LottoNumberGen gen = new LottoNumberGen();
-		gen.test();
+		return res;
 	}
 }

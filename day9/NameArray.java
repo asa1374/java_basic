@@ -1,5 +1,4 @@
 package day9;
-
 public class NameArray {
 	public void test() {
 		String[] names = new String[3];
@@ -15,10 +14,5 @@ public class NameArray {
 			}
 		}
 		System.out.println(res);
-	}
-	
-	public static void main(String[] args) {
-		NameArray na = new NameArray();
-		na.test();
 	}
 }

@@ -18,8 +18,4 @@ public class ScoreArray {
 		}
 		System.out.println(a);
 	}
-	public static void main(String[] args) {
-		NameScoreArray array = new NameScoreArray();
-		array.test();
-	}
 }

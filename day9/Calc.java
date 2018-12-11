@@ -1,12 +1,6 @@
 package day9;
-import java.util.Scanner;
 public class Calc {
-	public void test() {
-		System.out.println("계산식 입력하시오");
-		Scanner scanner = new Scanner(System.in);
-		int num1 = scanner.nextInt();
-		String op = scanner.next();
-		int num2 = scanner.nextInt();
+	public String test(int num1, String op,int num2) {
 		int res = 0;
 		switch(op) {
 		case "+" : res = num1+num2 ; break;
@@ -15,10 +9,6 @@ public class Calc {
 		case "/" : res = num1/num2 ; break;
 		case "%" : res = num1%num2 ; break;
 		}
-		System.out.println(num1+op + num2 + "=" +res);
-	}
-	public static void main(String[] args) {
-		Calc calc = new Calc();
-		calc.test();
+		 return num1+op + num2 + "=" +res;
 	}
 }

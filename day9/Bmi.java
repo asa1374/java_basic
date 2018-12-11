@@ -1,15 +1,8 @@
 package day9;
-import java.util.Scanner;
 public class Bmi {
-	public void test() {
-		System.out.println("몸무게 :");
-		Scanner scanner = new Scanner(System.in);
-		double w = scanner.nextDouble();
-		System.out.println("키 :");
-		double t = scanner.nextDouble();
+	public String test(double t,double w) {
 		double bmi = w/(t*t)*10000;
 		String res = "";
-		
 		if(bmi>=40) {
 			res = "고도비만";
 		}else if(bmi>=35) {
@@ -23,10 +16,6 @@ public class Bmi {
 		}else {
 			res = "저체중";
 		}
-		System.out.println(bmi + res);
-	}
-	public static void main(String[] args) {
-		Bmi bmi = new Bmi();
-		bmi.test();
+		return bmi + res;
 	}
 }
